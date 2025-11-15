@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(248, 230, 242);
+        }
+
+
+        .cat-container{
+            height: 300px;
+            width: 300px;
+            border: none;
+            border-radius: 4px;
+            background-image: url(cat.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: cat-animation 4s infinite;
+        }
+        @keyframes cat-animation {
+            from{ transform: scale(1); }
+            to{ transform: scale(1.4); }
+        }
+
+
+        .text{
+            margin-top: 52px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .image{
+            flex-direction: row;
+
+        
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="image"> another image</div>
+
+    <div class="cat-container"></div>
+
+    <div class="text">
+        Mwuahhhhhhhhh i loveeeeeeeeeeeee youuuuuuuuuu so much 😘
+    </div>
+
+</body>
+</html>
